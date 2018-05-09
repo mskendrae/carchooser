@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Chooser</title>
+</head>
+<body>
+<h3>Car Chooser</h3>
+<div>
+    <form>
+        Find By:
+        <input type="radio" name="findBy" value="make" checked>Make
+        <input type="radio" name="findBy" value="model">Model
+        <input type="radio" name="findBy" value="year">Year
+        <input type="radio" name="findBy" value="type">Type
+        <input type="radio" name="findBy" value="color">Color<br><br>
+
+        Make:
+        <select id="make">
+            <option value="Cheverolet">Cheverolet</option>
+            <option value="Ford">Ford</option>
+            <option value="Subaru">Subaru</option>
+            <option value="Cadillac">Cadillac</option>
+            <option value="Dodge">Dodge</option>
+            <option value="Honda">Honda</option>
+        </select><br><br>
+
+        Model: <input type="text" id="model"><br><br>
+        Year: <input type="text" id="year"><br><br>
+
+        Type:
+        <select id="type">
+            <option value="sedan">Sedan</option>
+            <option value="coupe">Coupe</option>
+            <option value="SUV">SUV</option>
+            <option value="mini-van">Mini-Van</option>
+            <option value="hatchback">Hatchback</option>
+        </select><br><br>
+
+        Color:
+        <select id="color">
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="silver">Silver</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="gray">Gray</option>
+            <option value="yellow">Yellow</option>
+            <option value="purple">Purple</option>
+        </select><br><br>
+
+    </form>
+    <button onclick="processForm()">Find Cars!</button>
+</div>
+
+  <div id="output">
+
+  </div>
+
+
+<script src="js/home.js"></script>
+
+</body>
+</html>
